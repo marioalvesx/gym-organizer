@@ -11,7 +11,7 @@
   "dependencies": {
     "@auth/prisma-adapter": "^1.5.1",
     "@hookform/resolvers": "^3.3.4",
-    "@prisma/client": "^5.11.0",
+    "@prisma/client": "^5.13.0",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-aspect-ratio": "^1.0.3",
@@ -40,6 +40,7 @@
     "@radix-ui/react-toggle": "^1.0.3",
     "@radix-ui/react-toggle-group": "^1.0.4",
     "@radix-ui/react-tooltip": "^1.0.7",
+    "@tanstack/react-table": "^8.16.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "cmdk": "^1.0.0",
@@ -59,17 +60,18 @@
     "tailwind-merge": "^2.2.2",
     "tailwindcss-animate": "^1.0.7",
     "vaul": "^0.9.0",
-    "zod": "^3.22.4"
+    "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
-    "eslint": "^8",
+    "eslint": "^9.1.1",
     "eslint-config-next": "14.1.4",
     "postcss": "^8",
-    "prisma": "^5.11.0",
+    "prisma": "^5.13.0",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
   }

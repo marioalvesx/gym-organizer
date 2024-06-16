@@ -12,7 +12,7 @@ export function AuthForm() {
 
   const handleSubmit = form.handleSubmit(async (data) => {
     try {
-      await signIn("email", { email: data.email, redirect: false });
+      await signIn("nodemailer", { email: data.email, redirect: false });
 
       toast({
         title: "Magik link sent",
@@ -60,7 +60,13 @@ export function AuthForm() {
                 {...form.register("email")}
               />
             </div>
-            <Button className="w-full">Send Magic Link</Button>
+            <Button
+              className="w-full"
+              type="submit"
+              disabled={form.formState.isSubmitting}
+            >
+              {form.formState.isSubmitting ? "Sending..." : "Send Magic Link"}
+            </Button>
           </form>
         </div>
       </div>
